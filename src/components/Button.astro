@@ -5,6 +5,21 @@
     src="../../src/assets/images/Group-4.png" 
     class="btn-pancake"
 />
-   <div class="element">
+<div class="element">
     <slot />
-   </div>
+</div>
+
+<style>
+    *{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .btn-pancake{
+        z-index: 10;
+    }
+    .element{
+        z-index: 50;
+    }
+</style>
