@@ -2,16 +2,22 @@
 import Layout from "@layouts/Layout.astro";
 import SampleComponent from "@components/SampleComponent.astro";
 import Container from "@components/Container.astro";
-import AstroLogo from "@assets/images/astro-logo-light-gradient.png";
 import { Content as SampleMarkdown } from "@content/sample-markdown.md";
 import { Image } from "astro:assets";
+import PancakeButton from "../../assets/images/Group-4.png";
 import Dropdown from "@components/Dropdown.astro";
 ---
 
 <Layout title="Project_1">
   <div class="page-container">
     <header>
-      <h1 class="header-start">Why the Old Library Should Have a Pancake Maker</h1>
+      <nav>
+        <h1 class="header-start">Why the Old Library Should Have a Pancake Maker</h1>
+        <div class="btn-pancake">
+          <image src={PancakeButton} alt="Pancake button" />
+        </div>
+      </nav>
+      
     </header>
     <section class="pancake-reason">
       <h2>This is a Good Idea, Trust Me</h2>
