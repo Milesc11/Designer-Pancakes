@@ -18,6 +18,15 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
           <Button>
             <h2 class="post">Why</h2>
           </Button>
+          <Button>
+            <h2 class="post">Bonus</h2>
+          </Button>
+          <Button>
+            <h2 class="post">How To</h2>
+          </Button>
+          <Button>
+            <h2 class="post">Options</h2>
+          </Button>
         </div>
       </nav>     
     </header>
@@ -62,16 +71,29 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
     <section class="body-section" id="alternatives">
       <h2>Other Options</h2>
     </section>
-    <Dropdown title="Pancakes">
-    </Dropdown>
+    <nav class="alt-grid">
+      <a class="alt-list">
+        <p>Waffles</p>
+      </a>
+      <a class="alt-list">
+        <p>Toast</p>
+      </a>
+      <a class="alt-list">
+        <p>French Toast</p>
+      </a>
+      <a class="alt-list">
+        <p>Taiyaki</p>
+      </a>
+    </nav>
     <a href="https://docs.google.com/document/d/13C7-kCTTVSB57x2g9iaKjl_Z_AjSTDTd_xHipEpWDtE/edit?tab=t.0">Project Layout</a>
   </div>
 </Layout>
 
 <style is:global>
-  .post{
-    position: relative;
-    left: 115px;
-    top: -7px
+  .page-container{
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
   }
+
 </style>
