@@ -6,6 +6,7 @@ import Dropdown from "@components/Dropdown.astro";
 import Button from "@components/Button.astro"
 import {Content as Reasoning} from "../components/markdown/Reasoning.md"
 import {Content as LoungeBonus} from "../components/markdown/LoungeBonus.md"
+import {Content as HowTo} from "../components/markdown/How-To.md"
 ---
 
 <Layout title="Project_1">
@@ -43,6 +44,17 @@ import {Content as LoungeBonus} from "../components/markdown/LoungeBonus.md"
     </section>
     <section class="body-section" id="how-to">
       <h2>How it Would Work</h2>
+      <div class="Tutorial">
+        <HowTo />
+      </div>
+      <Dropdown title="Available Options">
+        <ul>
+        <li>Maple syrup</li>
+        <li>Whipped cream</li>
+        <li>Chocolate chips</li>
+        <li>Blueberries</li>
+        </ul>
+      </Dropdown>
       <img 
       src="../../src/assets/images/IMG_3454.jpeg"
       class="lounge-hero";
