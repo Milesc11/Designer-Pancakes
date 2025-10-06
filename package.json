@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/oswald": "^5.2.8",
+    "@fontsource/anton": "^5.2.7",
+    "@fontsource/cagliostro": "^5.2.8",
     "@fontsource/karla": "^5.2.8",
     "astro": "^5.14.1"
   }
