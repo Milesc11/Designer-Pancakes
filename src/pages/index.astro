@@ -41,6 +41,7 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
         class="pancake-hero";
         />
       </div>
+    <hr />
     </section>
      <section class="body-section" id="Bonus">
       <h2>Lounge Bonus</h2>
@@ -54,6 +55,7 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
         />
       </div>
     </section>
+    <hr />
     <section class="body-section" id="how-to">
       <h2>How it Would Work</h2>
       <div class="tutorial">
@@ -74,24 +76,26 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
         />
       </div>
     </section>
+    <hr />
     <section class="body-section" id="alternatives">
       <h2>Other Options</h2>
-      <nav class="alt-grid">
-      <a class="alt-list">
-        <p>Waffles</p>
-      </a>
-      <a class="alt-list">
-        <p>Toast</p>
-      </a>
-      <a class="alt-list">
-        <p>French Toast</p>
-      </a>
-      <a class="alt-list">
-        <p>Taiyaki</p>
-      </a>
-    </nav>
+      <div class="food"> 
+        <nav class="alt-grid">
+        <a class="alt-list">
+          <p>Waffles</p>
+        </a>
+        <a class="alt-list">
+          <p>Toast</p>
+        </a>
+        <a class="alt-list">
+          <p>French Toast</p>
+        </a>
+        <a class="alt-list">
+          <p>Taiyaki</p>
+        </a>
+        </nav>
+      </div>
     </section>
-    <a href="https://docs.google.com/document/d/13C7-kCTTVSB57x2g9iaKjl_Z_AjSTDTd_xHipEpWDtE/edit?tab=t.0">Project Layout</a>
   </div>
 </Layout>
 
@@ -103,13 +107,14 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
   }
   .header-start{
     text-align: center;
-    padding: 0;
     padding: 1rem;
+    border: rgb(92, 61, 28) 5px solid;
   }
   .btn-pancake {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 15px;
   }
   .post{
     background: center no-repeat url(../../src/assets/images/Group-4.png);
@@ -124,6 +129,20 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
   .body-section > h2{
     text-align: center;
     margin-bottom: 0.5rem;
+  }
+  hr {
+  border: none;
+  border-top: 3px double #333333;
+  color: #333333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  margin: 30px 10px 0 10px;
+  }
+  hr::after {
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
   }
   .reason{
    padding-left: 10px;
@@ -155,5 +174,24 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
     border: rgb(92, 61, 28) 5px solid;
     border-radius: 5px;
   }
-
+  #alternatives{
+    margin-bottom: 20px;
+  }
+  .food{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .alt-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .alt-list{
+    border: rgb(92, 61, 28) 2px solid;
+    border-radius: 10px;
+    background-color: rgb(92, 61, 28);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
 </style>
