@@ -2,6 +2,10 @@
 // we can import fonts here, after installing them via Fontsource
 // see https://fontsource.org/docs/installation for instructions
 import "@fontsource/karla";
+import "@fontsource/cagliostro";
+import "@fontsource-variable/oswald";
+import "@fontsource/anton";
+// Supports weights 200-700
 ---
 
 <style is:global>
@@ -12,8 +16,8 @@ import "@fontsource/karla";
     --color-accent: rgb(92, 61, 28);
     --color-focus-ring: rgb(255, 0, 255);
 
-    --font-body: "Karla", sans-serif;
-    --font-headings: "Karla", sans-serif;
+    --font-body: "Cagliostro", sans-serif;
+    --font-headings: "Anton", sans-serif;
 
     font-size: 18px;
 
@@ -36,7 +40,12 @@ import "@fontsource/karla";
   h6 {
     color: var(--color-accent);
   }
-
+  h1 {
+  font-family: 'Anton', sans-serif;
+  }
+  h2 {
+  font-family: 'Oswald Variable', sans-serif;
+  }
   .post {
     color: rgb(246, 239, 161);
   }

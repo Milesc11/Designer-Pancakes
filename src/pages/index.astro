@@ -34,25 +34,29 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
       <h2>This is a Good Idea, Trust Me</h2>
       <div class="reason">
         <Reasoning />  
-      </div>      
-      <img 
-      src="../../src/assets/images/Pancake-Maker.jpg"
-      class="pancake-hero";
-      />
+      </div> 
+      <div class="hero-border">     
+        <img 
+        src="../../src/assets/images/Pancake-Maker.jpg"
+        class="pancake-hero";
+        />
+      </div>
     </section>
      <section class="body-section" id="Bonus">
       <h2>Lounge Bonus</h2>
       <div class="bonus">
         <LoungeBonus />
       </div>
-      <img 
-      src="../../src/assets/images/IMG_3455.jpeg"
-      class="lounge-hero";
-      />
+      <div class="hero-border">
+        <img 
+        src="../../src/assets/images/IMG_3455.jpeg"
+        class="lounge-hero";
+        />
+      </div>
     </section>
     <section class="body-section" id="how-to">
       <h2>How it Would Work</h2>
-      <div class="Tutorial">
+      <div class="tutorial">
         <HowTo />
       </div>
       <Dropdown title="Available Options">
@@ -63,15 +67,16 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
         <li>Blueberries</li>
         </ul>
       </Dropdown>
-      <img 
-      src="../../src/assets/images/IMG_3454.jpeg"
-      class="lounge-hero";
-      />
+      <div class="hero-border">
+        <img 
+        src="../../src/assets/images/IMG_3454.jpeg"
+        class="desk-hero";
+        />
+      </div>
     </section>
     <section class="body-section" id="alternatives">
       <h2>Other Options</h2>
-    </section>
-    <nav class="alt-grid">
+      <nav class="alt-grid">
       <a class="alt-list">
         <p>Waffles</p>
       </a>
@@ -85,6 +90,7 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
         <p>Taiyaki</p>
       </a>
     </nav>
+    </section>
     <a href="https://docs.google.com/document/d/13C7-kCTTVSB57x2g9iaKjl_Z_AjSTDTd_xHipEpWDtE/edit?tab=t.0">Project Layout</a>
   </div>
 </Layout>
@@ -98,6 +104,7 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
   .header-start{
     text-align: center;
     padding: 0;
+    padding: 1rem;
   }
   .btn-pancake {
     display: flex;
@@ -110,6 +117,43 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
     justify-content: center;
     padding: 10px;
     width: 200px;
+  }
+  .body-section{
+    margin-top: 1rem;
+  }
+  .body-section > h2{
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .reason{
+   padding-left: 10px;
+   padding-right: 10px;
+  }
+  .hero-border{
+    background-color: rgb(180, 175, 123);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  .pancake-hero{
+    border: rgb(92, 61, 28) 5px solid;
+    border-radius: 5px;
+  }
+  .bonus{
+   padding-left: 10px;
+   padding-right: 10px;
+  }
+  .lounge-hero{
+    border: rgb(92, 61, 28) 5px solid;
+    border-radius: 5px;
+  }
+  .tutorial{
+   padding-left: 10px;
+   padding-right: 10px;
+  }
+  .desk-hero{
+    border: rgb(92, 61, 28) 5px solid;
+    border-radius: 5px;
   }
 
 </style>
