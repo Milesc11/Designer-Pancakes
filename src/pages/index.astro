@@ -31,8 +31,8 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
       </nav>     
     </header>
     <section class="body-section" id="pancake-reason">
-      <h2>This is a Good Idea, Trust Me</h2>
       <div class="reason">
+        <h2>This is a Good Idea, Trust Me</h2>
         <Reasoning />  
       </div> 
       <div class="hero-border">     
@@ -43,9 +43,9 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
       </div>
     <hr />
     </section>
-     <section class="body-section" id="Bonus">
-      <h2>Lounge Bonus</h2>
+     <section class="body-section" id="Bonus">  
       <div class="bonus">
+        <h2>Lounge Bonus</h2>
         <LoungeBonus />
       </div>
       <div class="hero-border">
@@ -56,19 +56,19 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
       </div>
     </section>
     <hr />
-    <section class="body-section" id="how-to">
-      <h2>How it Would Work</h2>
+    <section class="body-section" id="how-to">    
       <div class="tutorial">
+        <h2>How it Would Work</h2>
         <HowTo />
+        <Dropdown title="Available Options">
+          <ul>
+          <li>Maple syrup</li>
+          <li>Whipped cream</li>
+          <li>Chocolate chips</li>
+          <li>Blueberries</li>
+          </ul>
+        </Dropdown> 
       </div>
-      <Dropdown title="Available Options">
-        <ul>
-        <li>Maple syrup</li>
-        <li>Whipped cream</li>
-        <li>Chocolate chips</li>
-        <li>Blueberries</li>
-        </ul>
-      </Dropdown>
       <div class="hero-border">
         <img 
         src="../../src/assets/images/IMG_3454.jpeg"
@@ -104,17 +104,20 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
     max-width: 430px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .header-start{
     text-align: center;
     padding: 1rem;
     border: rgb(92, 61, 28) 5px solid;
   }
-  .btn-pancake {
+  .btn-pancake{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 15px;
+    margin-bottom: 10px;
+    position: relative;
   }
   .post{
     background: center no-repeat url(../../src/assets/images/Group-4.png);
@@ -122,6 +125,28 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
     justify-content: center;
     padding: 10px;
     width: 200px;
+    position: relative;
+    z-index: 40;
+  }
+  .post:hover::after{
+    content: url(../../src/assets/images/Group-4.png);
+    padding: 10px;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: -1px;
+    transition: 1s;
+    z-index: -10;
+  }
+    .post:hover::before{
+    content: url(../../src/assets/images/Group-4.png);
+    padding: 10px;
+    width: 200px;
+    position: absolute;
+    top: 25px;
+    left: -1px;
+    transition: 1s;
+    z-index: -20;
   }
   .body-section{
     margin-top: 1rem;
@@ -153,10 +178,13 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
     display: flex;
     justify-content: center;
     padding: 30px;
+    border-radius: 5px;
   }
   .pancake-hero{
     border: rgb(92, 61, 28) 5px solid;
     border-radius: 5px;
+    width: auto;
+    height: auto;
   }
   .bonus{
    padding-left: 10px;
@@ -165,6 +193,8 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
   .lounge-hero{
     border: rgb(92, 61, 28) 5px solid;
     border-radius: 5px;
+    width: auto;
+    height: auto;
   }
   .tutorial{
    padding-left: 10px;
@@ -173,6 +203,8 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
   .desk-hero{
     border: rgb(92, 61, 28) 5px solid;
     border-radius: 5px;
+    width: auto;
+    height: auto;
   }
   #alternatives{
     margin-bottom: 20px;
@@ -193,5 +225,42 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
     text-align: center;
     padding: 10px;
     margin: 10px;
+  }
+
+  @media (min-width: 1300px) {
+    .page-container{
+      max-width: 100%;
+      padding: 0 10px;
+    }
+    #pancake-reason{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 1600px;
+    }
+    .reason{
+      max-width: 75%;
+    }
+    #Bonus{
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      max-width: 1600px;
+    }
+    .bonus{
+      max-width: 75%;
+    }
+    #how-to{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 1600px;
+    }
+    .tutorial{
+      max-width: 75%;
+    }
+    .hero-border{
+      max-width: 25%;
+    }
   }
 </style>
