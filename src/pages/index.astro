@@ -15,19 +15,19 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
       <nav>
         <h1 class="header-start">Why the Old Library Should Have a Pancake Maker</h1>
         <div class="btn-pancake">
-          <a class="post-1">
+          <a class="post-1" href="#pancake-reason">
               <h2>Why</h2>
           </a>
           <img alt="" src="../../src/assets/images/Group-4.png"/>
-          <a class="post-2">
+          <a class="post-2" href="#Bonus">
              <h2>Bonus</h2>
           </a>
            <img alt="" src="../../src/assets/images/Group-4.png"/>
-          <a class="post-3">
+          <a class="post-3" href="#howto">
             <h2>How To</h2>
           </a>
              <img alt="" src="../../src/assets/images/Group-4.png"/>
-          <a class="post-4">
+          <a class="post-4" href="#alternatives">
             <h2>Options</h2>
           </a>
            <img alt="" src="../../src/assets/images/Group-4.png"/>
@@ -62,7 +62,7 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
       </div>
     </section>
     <hr />
-    <section class="body-section" id="how-to">    
+    <section class="body-section" id="howto">    
       <div class="tutorial">
         <h2>How it Would Work</h2>
         <HowTo />
@@ -121,199 +121,40 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
   .btn-pancake{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: relative;
     margin-top: 15px;
     margin-bottom: 15px;
+    max-width: 430px;
+  }
+  .btn-pancake > img{
+    display: flex;
+    flex-direction: row;
   }
   .post-1{
     position: absolute;
-    left: 75px;
+    left: 100px;
     top: -1px;
+    text-decoration: none;
   }
-  .post-1::after{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
+   .post-2{
     position: absolute;
-    top: -9px;
-    left: -78px;
-    transition: all .5s;
-    z-index: -10;
-  }
-    .post-1::before{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: -9px;
-    left: -78px;
-    transition: all .5s;
-    z-index: -20;
-  }
-  .post-1:hover:after{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: 7px;
-    left: -78px;
-    transition: all .5s;
-    z-index: -10;
-  }
-    .post-1:hover:before{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: 23px;
-    left: -78px;
-    transition: all .5s;
-    z-index: -20;
-  }
-  .post-2{
-    position: absolute;
-    left: 253px;
+    left: 270px;
     top: -1px;
+    text-decoration: none;
   }
-  .post-2::after{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
+   .post-3{
     position: absolute;
-    top: -9px;
-    left: -66px;
-    transition: all .5s;
-    z-index: -10;
+    left: 84px;
+    top: 50px;
+    text-decoration: none;
   }
-    .post-2::before{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
+   .post-4{
     position: absolute;
-    top: -9px;
-    left: -66px;
-    transition: all .5s;
-    z-index: -20;
-  }
-  .post-2:hover:after{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: 7px;
-    left: -66px;
-    transition: all .5s;
-    z-index: -10;
-  }
-    .post-2:hover:before{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: 23px;
-    left: -66px;
-    transition: all .5s;
-    z-index: -20;
-  }
-  .post-3{
-    position: absolute;
-    left: 437px;
-    top: -1px;
-  }
-  .post-3::after{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: -9px;
-    left: -62px;
-    transition: all .5s;
-    z-index: -10;
-  }
-    .post-3::before{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: -9px;
-    left: -62px;
-    transition: all .5s;
-    z-index: -20;
-  }
-  .post-3:hover:after{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: 7px;
-    left: -62px;
-    transition: all .5s;
-    z-index: -10;
-  }
-    .post-3:hover:before{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: 23px;
-    left: -62px;
-    transition: all .5s;
-    z-index: -20;
-  }
-  .post-4{
-    position: absolute;
-    left: 623px;
-    top: -1px;
-  }
-  .post-4::after{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: -9px;
-    left: -58px;
-    transition: all .5s;
-    z-index: -10;
-  }
-    .post-4::before{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: -9px;
-    left: -58px;
-    transition: all .5s;
-    z-index: -20;
-  }
-  .post-4:hover:after{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: 7px;
-    left: -58px;
-    transition: all .5s;
-    z-index: -10;
-  }
-    .post-4:hover:before{
-    content: url(../../src/assets/images/Group-4.png);
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: 23px;
-    left: -58px;
-    transition: all .5s;
-    z-index: -20;
-  }
-  .post{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    width: 200px;
-    position: relative;
-    z-index: 40;
+    left: 262px;
+    top: 50px;
+    text-decoration: none;
   }
   .body-section{
     margin-top: 1rem;
@@ -399,6 +240,196 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
       max-width: 100%;
       padding: 0 10px;
     }
+    .btn-pancake{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    }
+    .post-1{
+    position: absolute;
+    left: 75px;
+    top: -1px;
+    }
+    .post-1::after{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: -9px;
+      left: -78px;
+      transition: all .5s;
+      z-index: -10;
+    }
+      .post-1::before{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: -9px;
+      left: -78px;
+      transition: all .5s;
+      z-index: -20;
+    }
+    .post-1:hover:after{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: 7px;
+      left: -78px;
+      transition: all .5s;
+      z-index: -10;
+    }
+      .post-1:hover:before{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: 23px;
+      left: -78px;
+      transition: all .5s;
+      z-index: -20;
+    }
+    .post-2{
+      position: absolute;
+      left: 253px;
+      top: -1px;
+    }
+    .post-2::after{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: -9px;
+      left: -66px;
+      transition: all .5s;
+      z-index: -10;
+    }
+      .post-2::before{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: -9px;
+      left: -66px;
+      transition: all .5s;
+      z-index: -20;
+    }
+    .post-2:hover:after{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: 7px;
+      left: -66px;
+      transition: all .5s;
+      z-index: -10;
+    }
+      .post-2:hover:before{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: 23px;
+      left: -66px;
+      transition: all .5s;
+      z-index: -20;
+    }
+    .post-3{
+      position: absolute;
+      left: 437px;
+      top: -1px;
+    }
+    .post-3::after{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: -9px;
+      left: -62px;
+      transition: all .5s;
+      z-index: -10;
+    }
+      .post-3::before{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: -9px;
+      left: -62px;
+      transition: all .5s;
+      z-index: -20;
+    }
+    .post-3:hover:after{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: 7px;
+      left: -62px;
+      transition: all .5s;
+      z-index: -10;
+    }
+      .post-3:hover:before{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: 23px;
+      left: -62px;
+      transition: all .5s;
+      z-index: -20;
+    }
+    .post-4{
+      position: absolute;
+      left: 623px;
+      top: -1px;
+    }
+    .post-4::after{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: -9px;
+      left: -58px;
+      transition: all .5s;
+      z-index: -10;
+    }
+      .post-4::before{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: -9px;
+      left: -58px;
+      transition: all .5s;
+      z-index: -20;
+    }
+    .post-4:hover:after{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: 7px;
+      left: -58px;
+      transition: all .5s;
+      z-index: -10;
+    }
+      .post-4:hover:before{
+      content: url(../../src/assets/images/Group-4.png);
+      padding: 10px;
+      width: 200px;
+      position: absolute;
+      top: 23px;
+      left: -58px;
+      transition: all .5s;
+      z-index: -20;
+    }
     #pancake-reason{
       display: flex;
       flex-direction: row;
@@ -417,7 +448,7 @@ import {Content as HowTo} from "../components/markdown/How-To.md"
     .bonus{
       max-width: 75%;
     }
-    #how-to{
+    #howto{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
